@@ -4,6 +4,7 @@ import Login from "pages/login";
 import Signup from "pages/signup";
 import { HomePage } from "pages/home";
 import DocumentEditor from "pages/document";
+import LandingPage from "pages/landing"; // Updated import path for the LandingPage
 import Layout from "./layout";
 
 function App() {
@@ -11,17 +12,21 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route>
-            <Route element={<RequireAuth />}>
-              <Route path="/">
-                <Route index element={<HomePage />} />
-                <Route path=":id" element={<DocumentEditor />} />
-              </Route>
+          {/* Public route: Landing page */}
+          <Route path="/" element={<LandingPage />} />
+
+          {/* Protected routes: Requires authentication */}
+          <Route element={<RequireAuth />}>
+            <Route path="/home">
+              <Route index element={<HomePage />} />
+              <Route path=":id" element={<DocumentEditor />} />
             </Route>
-            <Route element={<RequireGuest />}>
-              <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
-            </Route>
+          </Route>
+
+          {/* Guest-only routes: Only for unauthenticated users */}
+          <Route element={<RequireGuest />}>
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<Signup />} />
           </Route>
         </Routes>
       </Layout>

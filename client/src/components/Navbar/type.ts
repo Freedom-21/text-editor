@@ -1,4 +1,4 @@
-import { IDocumentProps } from "components/Home/type";
+import { IDocumentProps } from "pages/home/type";
 
 export interface INavbarProps {
   setValue: (data: IDocumentProps[]) => void;

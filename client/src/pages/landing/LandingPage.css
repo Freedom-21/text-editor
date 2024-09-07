@@ -1,0 +1,121 @@
+/* Add styles for your LandingPage */
+#home {
+    background-image: url('/home/freedom/alx_portfolio/client/images/home.webp');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .intro p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .intro .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #007bff;
+    color: white;
+    margin: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .intro .btn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add styles for Features and About sections */
+  #features, #about {
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 3rem 0;
+  }
+  
+  .feature-right .feature-text {
+    order: 1;
+  }
+  
+  .feature-right .feature-image {
+    order: 2;
+  }
+  
+  .feature-left .feature-image {
+    order: 1;
+  }
+  
+  .feature-left .feature-text {
+    order: 2;
+  }
+  
+  .feature-image img {
+    max-width: 400px;
+    height: auto;
+    margin: 0 1rem;
+  }
+  
+  .feature-text {
+    max-width: 500px;
+    text-align: left;
+    margin: 0 1rem;
+  }
+  
+  .features-background {
+    background-image: url('/home/freedom/alx_portfolio/client/images/');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .about-background {
+    background-image: url('/home/freedom/alx_portfolio/client/images/dark-background.jpeg');
+    background-size: cover;
+    background-position: center;
+    padding: 50px;
+    color: white;
+    text-align: center;
+  }
+  
+  #contact-links a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  #contact-links a:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
