@@ -5,6 +5,17 @@ import './LandingPage.css'; // Modular CSS for the landing page
 const LandingPage: React.FC = () => {
   return (
     <div>
+            {/* Navigation Menu */}
+            <header>
+        <nav>
+          <ul className="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      
       {/* Home Section */}
       <section id="home" className="full-screen">
         <div className="overlay">
@@ -48,7 +59,7 @@ const LandingPage: React.FC = () => {
       <section id="about" className="about-background">
         <h2>About the Project</h2>
         <p>This project is designed to facilitate collaborative writing. Built with love and dedication, it supports real-time updates and user-friendly features.</p>
-        <h3>Connect with Me</h3>
+        <h3>Let's Connect:</h3>
         <div id="contact-links">
           <a href="https://github.com/Freedom-21" target="_blank">GitHub</a>
           <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>

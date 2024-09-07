@@ -1,4 +1,44 @@
 /* Add styles for your LandingPage */
+/* Navigation Styles */
+header {
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li {
+  display: inline-block;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header nav ul li a:hover {
+  color: #007bff; /* Highlight link on hover */
+}
+
+body {
+  margin-top: 100px; /* Add margin so content doesn't overlap with fixed header */
+}
+
 #home {
     background-image: url('/images/home.webp');
     background-size: cover;
