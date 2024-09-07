@@ -29,13 +29,13 @@ const LandingPage: React.FC = () => {
             <p>Collaborate seamlessly with multiple users, all in real-time.</p>
           </div>
           <div className="feature-image">
-            <img src="/path/to/collaboration-image.jpg" alt="Collaboration" />
+            <img src="/images/collaboration-image.jpg" alt="Collaboration" />
           </div>
         </div>
 
         <div className="feature feature-left">
           <div className="feature-image">
-            <img src="/path/to/cursor-image.jpg" alt="Cursor Tracking" />
+            <img src="/images/cursor-image.jpg" alt="Cursor Tracking" />
           </div>
           <div className="feature-text">
             <h3>Cursor Position Tracking</h3>

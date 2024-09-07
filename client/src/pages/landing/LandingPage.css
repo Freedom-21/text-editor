@@ -1,6 +1,6 @@
 /* Add styles for your LandingPage */
 #home {
-    background-image: url('/home/freedom/alx_portfolio/client/images/home.webp');
+    background-image: url('/images/home.webp');
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -82,13 +82,13 @@
   }
   
   .features-background {
-    background-image: url('/home/freedom/alx_portfolio/client/images/');
+    background-image: url('/images/');
     background-size: cover;
     background-position: center;
   }
   
   .about-background {
-    background-image: url('/home/freedom/alx_portfolio/client/images/dark-background.jpeg');
+    background-image: url('/images/dark-background.jpeg');
     background-size: cover;
     background-position: center;
     padding: 50px;
