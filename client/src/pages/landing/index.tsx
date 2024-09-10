@@ -32,7 +32,7 @@ const LandingPage: React.FC = () => {
 
       {/* Features Section */}
       <section id="features" className="features-background">
-        <h2>Key Features</h2>
+        <h2>Features</h2>
 
         <div className="feature feature-right">
           <div className="feature-text">
@@ -62,7 +62,7 @@ const LandingPage: React.FC = () => {
         <h3>Let's Connect:</h3>
         <div id="contact-links">
           <a href="https://github.com/Freedom-21" target="_blank">GitHub</a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+          <a href="https://linkedin.com/in/freedom-yenesew" target="_blank">LinkedIn</a>
           <a href="https://github.com/Freedom-21/text-editor" target="_blank">Project Repository</a>
         </div>
       </section>

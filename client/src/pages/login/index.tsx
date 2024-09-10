@@ -6,7 +6,7 @@ import { FiUnlock } from "react-icons/fi";
 import InputField from "components/blocks/InputField";
 import Button from "components/blocks/Button";
 import Card from "components/blocks/Card";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom"; // Import useNavigate
 import { END_POINT } from "utils/constants";
 
 const index: React.FC = () => {
@@ -22,6 +22,7 @@ const index: React.FC = () => {
     password: string;
   }>(defaultFormFields);
 
+  const navigate = useNavigate(); // Initialize useNavigate
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
     setFormFields({ ...formFields, [name]: value });
@@ -36,8 +37,8 @@ const index: React.FC = () => {
       .post(`${END_POINT}/api/v1/users/login`, data)
       .then((response) => {
         localStorage.setItem("accessToken", response?.data?.accessToken);
-        window.location.replace("/");
-        console.log(response, "thi is response");
+        navigate("/home"); // Redirect to /home after successful login
+        console.log(response, "this is response");
       })
       .catch((err) => {
         setError(err?.response?.data?.message);

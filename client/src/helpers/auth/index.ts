@@ -1,4 +1,4 @@
-import RequireAuth from "./RequireAuth";
-import RequireGuest from "./RequireGuste";
+import RequireAuth from "../../RequireAuth";
+import RequireGuest from "../../RequireGuest";
 
 export { RequireAuth, RequireGuest };

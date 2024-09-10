@@ -24,7 +24,8 @@ const Home: React.FC<IHomeComponentProps> = ({ document, loggedUser }) => {
   const [showModal, setShowModal] = useState<boolean>(false);
   const [showDeleteModal, setShowDeleteModal] = useState<boolean>(false);
   const [docId, setDocId] = useState<string>("");
-  const { first_name, last_name } = loggedUser && loggedUser;
+  const { first_name, last_name } = loggedUser || {};
+  
 
   const toggleModal = () => {
     setShowModal(!showModal);

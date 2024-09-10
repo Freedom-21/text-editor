@@ -54,7 +54,7 @@ const Modal: React.FC<IModalProps> = ({ showModal, toggleModal }) => {
         <Card type="center" className=" bg-white">
           <div className="flex items-center justify-end">
             <div className="text-[#1E56A0] text-[26px] font-semibold">
-              Create doc
+              Create Document
             </div>
             <Button
               startIcon={<CgClose color="#1E56A0" />}

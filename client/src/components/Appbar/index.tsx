@@ -2,7 +2,7 @@ import InputField from "components/blocks/InputField";
 import { IAppBar } from "./type";
 
 const AppBar: React.FC<IAppBar> = ({ onChange, loggedUser }) => {
-  const { first_name, last_name } = loggedUser && loggedUser;
+  const { first_name, last_name } = loggedUser || {};
 
   return (
     <div className="flex justify-between items-center mt-2 mx-6">

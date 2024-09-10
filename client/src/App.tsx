@@ -1,32 +1,28 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { RequireAuth, RequireGuest } from "../src/helpers/auth";
 import Login from "pages/login";
 import Signup from "pages/signup";
 import { HomePage } from "pages/home";
 import DocumentEditor from "pages/document";
-import LandingPage from "pages/landing"; // Updated import path for the LandingPage
 import Layout from "./layout";
+import RequireAuth from "./RequireAuth";
+import RequireGuest from "./RequireGuest";
+import LandingPage from "pages/landing";
 
 function App() {
   return (
     <Router>
       <Layout>
         <Routes>
-          {/* Public route: Landing page */}
-          <Route path="/" element={<LandingPage />} />
-
-          {/* Protected routes: Requires authentication */}
-          <Route element={<RequireAuth />}>
-            <Route path="/home">
-              <Route index element={<HomePage />} />
-              <Route path=":id" element={<DocumentEditor />} />
+          <Route>
+          <Route index element={<LandingPage />} /> Landing page is root
+            <Route element={<RequireAuth />}>
+                <Route path="/home" element={<HomePage />} />
+                <Route path="/home/:id" element={<DocumentEditor />} />
             </Route>
-          </Route>
-
-          {/* Guest-only routes: Only for unauthenticated users */}
-          <Route element={<RequireGuest />}>
-            <Route path="/login" element={<Login />} />
-            <Route path="/signup" element={<Signup />} />
+            <Route element={<RequireGuest />}>
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+            </Route>
           </Route>
         </Routes>
       </Layout>
@@ -35,3 +31,4 @@ function App() {
 }
 
 export default App;
+

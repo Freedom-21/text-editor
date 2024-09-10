@@ -9,14 +9,14 @@ import useGetUsers from "utils/hooks/api/useGetUser";
 const interval_ms = 500;
 export default function DocumentEditor() {
   const { loggedUser } = useGetUsers();
-  const { first_name, last_name } = loggedUser && loggedUser;
+  const { first_name, last_name } = loggedUser || {};
 
   Quill.register("modules/cursors", QuillCursors);
 
   const { id: doc_id } = useParams();
   const [newSocket, setSocket] = useState(io);
   const [quill, setQuill] = useState<Quill>();
-
+    
   useEffect(() => {
     if (newSocket == null || quill == null) return;
 
@@ -44,7 +44,7 @@ export default function DocumentEditor() {
         const cursorData = {
           clientId: newSocket.id,
           range: range,
-          name: first_name,
+          name: first_name || "Guest",
           color: "#1E56A0", // Provide unique colors for different users
         };
         newSocket.emit("cursorChange", cursorData);
