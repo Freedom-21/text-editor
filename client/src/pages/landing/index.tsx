@@ -5,8 +5,8 @@ import './LandingPage.css'; // Modular CSS for the landing page
 const LandingPage: React.FC = () => {
   return (
     <div>
-            {/* Navigation Menu */}
-            <header>
+      {/* Navigation Menu */}
+      <header>
         <nav>
           <ul className="nav-links">
             <li><a href="#home">Home</a></li>
@@ -36,21 +36,34 @@ const LandingPage: React.FC = () => {
 
         <div className="feature feature-right">
           <div className="feature-text">
-            <h3>Real-Time Collaboration</h3>
-            <p>Collaborate seamlessly with multiple users, all in real-time.</p>
+            <h3 className="user-friendly-title">Real-Time Collaboration</h3>
+            <p className="user-friendly-desc">Collaborate seamlessly with multiple users, all in real-time.</p>
           </div>
           <div className="feature-image">
-            <img src="/images/collaboration-image.jpg" alt="Collaboration" />
+            <img src="/images/collaboration-image.png" alt="Collaboration" />
           </div>
         </div>
 
         <div className="feature feature-left">
           <div className="feature-image">
-            <img src="/images/cursor-image.jpg" alt="Cursor Tracking" />
+            <img src="/images/cursor-image.png" alt="Cursor Tracking" />
           </div>
           <div className="feature-text">
-            <h3>Cursor Position Tracking</h3>
-            <p>See where your collaborators are typing with visible cursors for everyone.</p>
+            <h3 className="user-friendly-title">Cursor Position Tracking</h3>
+            <p className="user-friendly-desc">See where your collaborators are typing with visible cursors for everyone.</p>
+          </div>
+        </div>
+
+        {/* New "User Friendly" feature */}
+        <div className="feature feature-right">
+          <div className="feature-text">
+            <h3 className="user-friendly-title">User Friendly</h3>
+            <p className="user-friendly-desc">
+              Our tool is designed with simplicity in mind, allowing users to focus on writing and collaboration without the need for complex setup or configurations.
+            </p>
+          </div>
+          <div className="feature-image">
+            <img src="/images/friendly.png" alt="User Friendly Feature" />
           </div>
         </div>
       </section>

@@ -47,26 +47,26 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+}
   
-  .overlay {
+.overlay {
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
     padding: 2rem;
-  }
+}
   
-  .intro h1 {
+.intro h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-  }
+}
   
-  .intro p {
+.intro p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-  }
+}
   
-  .intro .btn {
+.intro .btn {
     display: inline-block;
     padding: 1rem 2rem;
     background-color: #007bff;
@@ -74,69 +74,82 @@ body {
     margin: 10px;
     border-radius: 5px;
     text-decoration: none;
-  }
+}
   
-  .intro .btn:hover {
+.intro .btn:hover {
     background-color: #0056b3;
-  }
-  
-  /* Add styles for Features and About sections */
-  #features, #about {
+}
+
+/* Add styles for Features and About sections */
+#features, #about {
     padding: 50px;
     text-align: center;
-  }
+}
   
-  .feature {
+.feature {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 3rem 0;
-  }
+}
   
-  .feature-right .feature-text {
+.feature-right .feature-text {
     order: 1;
-  }
+}
   
-  .feature-right .feature-image {
+.feature-right .feature-image {
     order: 2;
-  }
+}
   
-  .feature-left .feature-image {
+.feature-left .feature-image {
     order: 1;
-  }
+}
   
-  .feature-left .feature-text {
+.feature-left .feature-text {
     order: 2;
-  }
+}
   
-  .feature-image img {
+.feature-image img {
     max-width: 400px;
     height: auto;
     margin: 0 1rem;
-  }
+}
   
-  .feature-text {
+.feature-text {
     max-width: 500px;
     text-align: left;
     margin: 0 1rem;
-  }
+}
   
-  .features-background {
+.features-background {
     background-image: url('/images/');
     background-size: cover;
     background-position: center;
-  }
+}
   
-  .about-background {
+.about-background {
     background-image: url('/images/dark-background.jpeg');
     background-size: cover;
     background-position: center;
     padding: 50px;
     color: white;
     text-align: center;
-  }
-  
-  #contact-links a {
+}
+
+/* Updated styling for all feature titles and descriptions */
+.user-friendly-title {
+  color: #6fc3df; /* Light blueish color */
+  font-family: 'Arial', sans-serif; /* Different font */
+  font-size: 1.8rem;
+}
+
+.user-friendly-desc {
+  font-family: 'Georgia', serif; /* Different font for description */
+  color: #333; /* Darker color for contrast */
+  font-size: 1.1rem;
+}
+
+#contact-links a {
     display: inline-block;
     padding: 10px 20px;
     background-color: rgba(255, 255, 255, 0.2);
@@ -145,17 +158,16 @@ body {
     text-align: center;
     text-decoration: none;
     transition: background-color 0.3s;
-  }
+}
   
-  #contact-links a:hover {
+#contact-links a:hover {
     background-color: rgba(255, 255, 255, 0.5);
-  }
-  
-  /* Footer */
-  footer {
+}
+
+/* Footer */
+footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-  }
-  
+}
